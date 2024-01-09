@@ -1,13 +1,14 @@
 "use client";
 
+import DetailsSection from "@/app/components/DetailsSection";
 import { usePathname } from "next/navigation";
 
 const About = () => {
   const pathname = usePathname();
   return (
     <>
-      <div className="container mx-auto px-4 mt-5">
-        <h2>About</h2>
+      <div>
+        <DetailsSection title="OUR STORY" imageUrl ={"/Images/about1.svg"}/>
       </div>
     </>
   );

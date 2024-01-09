@@ -1,4 +1,4 @@
-
+import MovieCard from "@/app/components/MovieCard";
 
 const Movie = async () => {
   const url = process.env.RAPID_KEY;
@@ -10,13 +10,23 @@ const Movie = async () => {
     },
   };
 
-  const data = await fetch(url,options);
+  const data = await fetch(url, options);
   const response = await data.json();
-  console.log(response.titles);
+  const main_data = response.titles;
+  console.log(main_data);
 
   return (
     <>
-      <div className="container mx-auto px-4 mt-5">Movie</div>
+      <div className="container mx-auto px-4 mt-10">
+       
+        <div className="grid grid-cols-3 gap-5">
+          {main_data?.slice(0,12)?.map((item, index) => (
+            <div className=" border-2 border-black border-solid w-full ">
+              <MovieCard key={index} {...item} />
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };

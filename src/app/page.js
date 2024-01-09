@@ -1,10 +1,11 @@
 
 import Image from "next/image";
+import DetailsSection from "./components/DetailsSection";
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 mt-5">
-        <h2>Home</h2>
+    <main>
+        <DetailsSection title={"LET\'S WATCH MOVIE TOGETHER"} imageUrl={"Images/home.svg"}/>
     </main>
   );
 }
