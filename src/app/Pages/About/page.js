@@ -1,13 +1,16 @@
-'use client'
+"use client";
 
-import { usePathname } from 'next/navigation'
-import React from 'react'
+import { usePathname } from "next/navigation";
 
 const About = () => {
   const pathname = usePathname();
   return (
-    <div>page:{pathname}</div>
-  )
-}
+    <>
+      <div className="container mx-auto px-4 mt-5">
+        <h2>About</h2>
+      </div>
+    </>
+  );
+};
 
-export default About
+export default About;
