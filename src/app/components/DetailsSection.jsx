@@ -22,7 +22,7 @@ const DetailsSection = ({title, imageUrl}) => {
                             our
                             selection of the latest and greatest movies, and find your new favorite today.
                         </p>
-                        <Link href="/Pages/Movies" className="capitalize text-sm font-medium bg-black text-white px-4 py-3 rounded-full ">
+                        <Link href="/Pages/Movies" className="capitalize text-sm font-medium bg-black text-white px-4 py-3 rounded-full hover:bg-transparent hover:border border-black border-solid transition-all duration-150 hover:text-black">
                             <button className={mulish.className}>
                                 Explore Movies
                             </button>
