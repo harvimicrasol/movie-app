@@ -19,9 +19,9 @@ const Movie = async () => {
     <>
       <div className="container mx-auto px-4 mt-10">
        
-        <div className="grid grid-cols-3 gap-5">
+        <div className="md:grid grid-cols-3 gap-5">
           {main_data?.slice(0,12)?.map((item, index) => (
-            <div className=" border-[1px] rounded-lg border-black border-solid w-full ">
+            <div className=" border-[1px] rounded-lg border-black border-solid w-full md:mb-0 mb-5">
               <MovieCard key={index} {...item} />
             </div>
           ))}

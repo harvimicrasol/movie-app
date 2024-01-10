@@ -4,9 +4,9 @@ import { MdEmail, MdForum, MdVoiceChat } from "react-icons/md";
 const ContactCard = () => {
   return (
     <>
-      <div className="grid grid-cols-3 gap-6 my-10">
-        <div className="px-3 py-6 text-center  bg-white shadow-xl">
-          <div className="mx-[220px] mb-2 text-[20px] text-red-500">
+      <div className="md:grid grid-cols-3 gap-6 my-10">
+        <div className="px-3 py-6 text-center  bg-white shadow-xl md:mb-0 mb-5">
+          <div className="flex justify-center mb-2 text-[20px] text-red-500">
             <MdEmail />
           </div>
           <h2 className="text-lg font-bold">Email</h2>
@@ -18,8 +18,8 @@ const ContactCard = () => {
           </Link>
         </div>
 
-        <div className="px-3 py-6 text-center  bg-white shadow-xl">
-          <div className="mx-[220px] mb-2 text-[20px] text-red-500">
+        <div className="px-3 py-6 text-center  bg-white shadow-xl md:mb-0 mb-5">
+          <div className="flex justify-center mb-2 text-[20px] text-red-500">
             <MdVoiceChat />
           </div>
           <h2 className="text-lg font-bold">Live Chat</h2>
@@ -32,7 +32,7 @@ const ContactCard = () => {
         </div>
 
         <div className="px-3 py-6 text-center  bg-white shadow-xl">
-          <div className="mx-[220px] mb-2 text-[20px] text-red-500">
+          <div className="flex justify-center mb-2 text-[20px] text-red-500">
             <MdForum />
           </div>
           <h2 className="text-lg font-bold" >Community Forum</h2>

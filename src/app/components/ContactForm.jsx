@@ -49,7 +49,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="px-20 py-16 mt-5 text-left border-[1px] w-96"
+      className="md:px-20 px-10 md:py-16 py-5 mt-5 text-left border-[1px] md:w-96"
       onSubmit={handleSubmit}
     >
       <div className="mb-6">

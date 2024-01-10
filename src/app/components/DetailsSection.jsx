@@ -15,10 +15,10 @@ const DetailsSection = ({title, imageUrl}) => {
     return (
         <main className={heroStyles.main_section}>
             <div className="container mx-auto px-4">
-                <div className="flex justify-between items-center h-[800px]">
-                    <div className={heroStyles.hero_content} style={{width:"1000px"}}>
-                        <h1>{title}</h1>
-                        <p> From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
+                <div className="md:flex md:pt-0 pt-[170px]  justify-between items-center md:h-[800px] h-[1000px]">
+                    <div className="flex-col justify-center items-start md:mb-0 mb-14">
+                        <h1 className="uppercase md:text-7xl text-4xl">{title}</h1>
+                        <p className="my-6"> From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
                             our
                             selection of the latest and greatest movies, and find your new favorite today.
                         </p>
@@ -29,7 +29,7 @@ const DetailsSection = ({title, imageUrl}) => {
                         </Link>
                     </div>  
 
-                    <div className={heroStyles.hero_image}>
+                    <div className="justify-end items-center">
                         <Image src={imageUrl} alt="watching netflix" width={500} height={500}/>
                     </div>
                 </div>
