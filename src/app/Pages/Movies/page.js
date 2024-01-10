@@ -32,3 +32,9 @@ const Movie = async () => {
 };
 
 export default Movie;
+
+export function generateMetadata({params}){
+  return{
+    title:"Movie List"
+  }
+}

@@ -44,3 +44,9 @@ const page = async (params) => {
 };
 
 export default page;
+
+export function generateMetadata({params}){
+  return{
+    title:"Movie List"
+  }
+}

@@ -1,10 +1,8 @@
-"use client";
+
 
 import DetailsSection from "@/app/components/DetailsSection";
-import { usePathname } from "next/navigation";
 
 const About = () => {
-  const pathname = usePathname();
   return (
     <>
       <div>
@@ -15,3 +13,10 @@ const About = () => {
 };
 
 export default About;
+
+
+export function generateMetadata({params}){
+  return{
+    title:"About us"
+  }
+}
