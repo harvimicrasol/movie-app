@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/contact", {
+      let response = await fetch("/api/contact", {
         method: "POST",
         headers: { Content_Type: "application/json" },
         body: JSON.stringify({
@@ -30,7 +30,9 @@ const ContactForm = () => {
           phone: user.phone,
           message: user.message,
         }),
+       
       });
+        
       if (response.status === 200) {
         setuser({
           username: "",
