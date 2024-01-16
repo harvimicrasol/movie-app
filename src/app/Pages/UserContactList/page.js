@@ -30,7 +30,9 @@
 
 const page = async () => {
   try {
-    const datalist = await fetch("http://localhost:3001/api/contact").then(response => response.json());
+    const datalist = await fetch("http://localhost:3001/api/contact").then(
+      (response) => response.json()
+    );
 
     console.log(datalist, "datalist");
 
@@ -38,11 +40,17 @@ const page = async () => {
       <>
         <div className="container mx-auto px-4 mt-5">
           <h1 className="font-bold text-2xl">User Datalist</h1>
-          {datalist && datalist.result && datalist.result.map((item, index) => (
-            <div key={index} className="mt-2">
-              <h2>Name: {item.username}</h2>
-            </div>
-          ))}
+          {datalist &&
+            datalist.result &&
+            datalist.result.map((item, index) => (
+              <div key={index} className="mt-2">
+                <div>
+                  <span className="mr-5">Name: {item.username}</span>
+                  <button className="mr-5">Edit</button>
+                  <button>Delete</button>
+                </div>
+              </div>
+            ))}
         </div>
       </>
     );
