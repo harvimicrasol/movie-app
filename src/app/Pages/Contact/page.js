@@ -15,7 +15,7 @@ const Contact = () => {
           </h2>
 
             <ContactForm/>
-            <Link href={`/Pages/UserContactList`}><h2 className="mt-3">Show UserContact List</h2></Link>
+            {/* <Link href={`/Pages/UserContactList`}><h2 className="mt-3">Show UserContact List</h2></Link> */}
         </div>  
       </div>
       <iframe

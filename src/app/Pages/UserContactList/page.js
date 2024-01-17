@@ -30,7 +30,7 @@
 
 const page = async () => {
   try {
-    const datalist = await fetch("http://localhost:3001/api/contact").then(
+    const datalist = await fetch("http://localhost:3000/api/contact").then(
       (response) => response.json()
     );
 
